@@ -116,9 +116,9 @@
 		}
 	};
 
-	laurel_demoStyle.prototype = _.extend({}, new blink.theme.styles.laurel_demo(), laurel_demoStyle.prototype);
+	laurel_demo.prototype = _.extend({}, new blink.theme.styles.laurel_demo(), laurel_demo.prototype);
 
-	blink.theme.styles.laurel_demo = laurel_demoStyle;
+	blink.theme.styles.laurel_demo = laurel_demo;
 
 })( blink );
 
