@@ -6,7 +6,7 @@
 		},
 		page = blink.currentPage;
 
-	laurel_demoStyle.prototype = {
+	laurel_demo.prototype = {
 		bodyClassName: 'content_type_clase_laurel_demo',
 		extraPlugins: ['image2'],
 		ckEditorStyles: {
