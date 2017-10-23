@@ -1,16 +1,16 @@
 (function (blink) {
 	'use strict';
 
-	var laurelStyle = function () {
+	var laurel-demo = function () {
 			blink.theme.styles.classic.apply(this, arguments);
 		},
 		page = blink.currentPage;
 
-	laurelStyle.prototype = {
-		bodyClassName: 'content_type_clase_laurel',
+	laurel-demoStyle.prototype = {
+		bodyClassName: 'content_type_clase_laurel-demo',
 		extraPlugins: ['image2'],
 		ckEditorStyles: {
-			name: 'laurel',
+			name: 'laurel-demo',
 			styles: [
 
 				{ name: 'Título 1', element: 'h4', attributes: { 'class': 'bck-title1'} },
@@ -116,9 +116,9 @@
 		}
 	};
 
-	laurelStyle.prototype = _.extend({}, new blink.theme.styles.classic(), laurelStyle.prototype);
+	laurel-demoStyle.prototype = _.extend({}, new blink.theme.styles.classic(), laurel-demoStyle.prototype);
 
-	blink.theme.styles.laurel = laurelStyle;
+	blink.theme.styles.laurel-demo = laurel-demoStyle;
 
 })( blink );
 
@@ -145,9 +145,9 @@ $(document).ready(function () {
 	}
 
 	// BK-8433 cambiamos el logo de las slides por el del dominio
-	var src_logo = $('.content_type_clase_laurel').find('.logo_slide').attr('logo_dominio');
+	var src_logo = $('.content_type_clase_laurel-demo').find('.logo_slide').attr('logo_dominio');
 	if (typeof(src_logo) != 'undefined' && src_logo && src_logo != '' && src_logo.indexOf('gif1x1.gif') == -1) {
-		$('.content_type_clase_laurel').find('.logo-publisher').css('background-image', "url('"+src_logo+"')");
+		$('.content_type_clase_laurel-demo').find('.logo-publisher').css('background-image', "url('"+src_logo+"')");
 	}
 
 });
