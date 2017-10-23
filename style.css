@@ -39,6 +39,11 @@
 		position: relative;
 	}
 
+
+	#actividad .content .header .title {
+    color: transparent;
+	}
+
 	.content_type_clase_laurel #actividad .content .header .title img,
 	.content_type_clase_laurel #actividad .content .header .chapter {
 		display: none;
@@ -51,7 +56,9 @@
 	}
 
 	.content_type_clase_laurel #actividad .content .header {
-		border: none;
+	    margin-bottom: 20px;
+	    border: none!important;
+	    color: transparent;
 	}
 
 	.content_type_clase_laurel #actividad .content .header .title {
