@@ -123,6 +123,8 @@
 })( blink );
 
 $(document).ready(function () {
+	
+	$('body').addClass('content_type_curso_classic content_type_clase_demo_style ');
 
     $('.item').find('.header').find('.title')
 		.filter(function () {
@@ -176,6 +178,3 @@ function poolReposition() {
 	});
 }
 
-$(document).ready(function () {
-$('body').addClass('content_type_curso_laurel_demo	content_type_clase_laurel_demo');
-});
