@@ -1,7 +1,7 @@
-# laurel-demo
 /* General */
 
 @import url(https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,400italic);
+
 
 	.body_clase:not(.edit) .content-wrapper {
 		padding-top: 100px;
@@ -55,9 +55,7 @@
 	}
 
 	.content_type_clase_classic #actividad .content .header .title {
-		margin-top: -40px;
-		padding-top: 30px;
-		padding-bottom: 10px;
+		display: none;
 	}
 
 	.content_type_clase_classic #actividad .content .header .title h3 {
@@ -207,7 +205,7 @@
 		font-family: 'FontAwesome';
 		position: absolute;
 		margin-top: -3px;
-		background: #FFCA04;
+		background: #9655A2;
 		color: #ffffff;
 		border-radius: 120px;
 		width: 48px;
@@ -344,7 +342,7 @@
 
 	.content_type_clase_classic .publisher-navbar .dropdown,
 	.content_type_clase_classic .publisher-navbar #top-navigator .slider-indicators {
-		background: #FFCA04;
+		background: #9655A2;
 	}
 	.content_type_clase_classic .publisher-navbar .dropdown {
 		border-radius: 120px 0 0 120px;
@@ -422,9 +420,7 @@
 	}
 
 	.open > .dropdown-menu {
-		display: block;
-		max-height: 300px;
-		overflow-y: auto;
+		display: none;
 	}
 
 	.content_type_clase_classic .publisher-navbar .dropdown button {
@@ -529,7 +525,7 @@
 	}
 	.bck-enfasis,
 	strong {
-		color: #0095DA;
+		color: #595959;
 		font-weight: bold;
 	}
 
@@ -603,15 +599,15 @@
 
 	.cke_contents table:not(.rf-tablegrid),
 	.content table:not(.rf-tablegrid) {
-		border: 1px solid #CBCCCD;
+		border: none;	
 	}
 
 	.cke_contents table:not(.rf-tablegrid) td,
 	.cke_contents table:not(.rf-tablegrid) th,
 	.content table:not(.rf-tablegrid) td,
 	.content table:not(.rf-tablegrid) th {
-		border: 1px solid #CBCCCD;
-		padding: 7px;
+		border: none;
+    	padding: 0px;
 	}
 
 	.cke_contents table:not(.rf-tablegrid) caption,
@@ -637,7 +633,7 @@
 	}
 	.bck-box .bck-title1,
 	.bck-box .bck-title2 {
-		border-left: 0;
+    	border-left: 13px solid #9655A2;
 		margin-left: 0;
 		padding: 0;
 		margin-bottom: 10px;
@@ -832,7 +828,7 @@
 		padding-left: 20px;
 	}
 	.js-slide-wrapper > .header .single-pagination {
-		right: 30px;
+		display: none;
 	}
 	.navigator {
 		padding-left: 30px;
@@ -842,7 +838,7 @@
 		padding-left: 25px;
 	}
 	.content_type_clase_classic .logo-publisher {
-		margin-left: -20px;
+		display:none;
 	}
 
 }
@@ -961,4 +957,18 @@ div.calculo table.marco * {
 
 .content_type_clase_classic .slide_main input {
     border: 1px solid #ccc !important;
+}
+
+
+
+/*color toc*/
+.btn-primary, .btn-primary.disabled, .btn-primary.disabled:focus {
+    color: #fff;
+    background-color: #9555A3;
+    border-color: transparent;
+    opacity: 1;
+}
+
+#indice .units ul li.active:not(.disabled), body:not(.isTablet) #indice .units ul li:hover:not(.disabled), #indice .units ul li:focus:not(.disabled) {
+    background: #9555A3;
 }
