@@ -971,3 +971,9 @@ div.calculo table.marco * {
 .tema {
     color: transparent;
 }
+
+.content_type_clase_classic #actividad .content .header .title h3{
+
+display: none;
+
+}
