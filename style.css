@@ -67,16 +67,7 @@
 	}
 
 	.content_type_clase_laurel #actividad .content .header .title h3 {
-		font-family: 'Averia Serif Libre', Georgia, serif;
-		font-size: 6.2rem;
-		font-weight: normal;
-		color: #0095DA;
-		display: block;
-		border-left: 18px solid #FFCA04;
-		margin-left: -97px;
-		padding: 50px 106px 0px 72px;
-		margin-top: -30px;
-		margin-bottom: 50px;
+		display:none;
 	}
 	.content_type_clase_laurel #actividad .content .header .title h3 span {
 		display: block;
