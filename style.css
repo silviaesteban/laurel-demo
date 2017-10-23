@@ -59,6 +59,7 @@
 	    margin-bottom: 20px;
 	    border: none!important;
 	    color: transparent;
+	    display: none;
 	}
 
 	.content_type_clase_laurel #actividad .content .header .title {
@@ -978,4 +979,8 @@ div.calculo table.marco * {
 
 #indice .units ul li.active:not(.disabled), body:not(.isTablet) #indice .units ul li:hover:not(.disabled), #indice .units ul li:focus:not(.disabled) {
     background: #9555A3;
+}
+
+.tema {
+    color: transparent;
 }
