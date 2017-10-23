@@ -977,3 +977,13 @@ div.calculo table.marco * {
 display: none;
 
 }
+
+.content_type_clase_classic .publisher-navbar {
+    position: fixed;
+    top: 44px;
+    background: #ffffff;
+    width: 100%;
+    left: 0;
+    height: 58px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0 9px;
+}
