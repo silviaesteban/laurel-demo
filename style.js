@@ -2,7 +2,7 @@
 	'use strict';
 
 	var laurel_demo = function () {
-			blink.theme.styles.classic.apply(this, arguments);
+			blink.theme.styles.basic.apply(this, arguments);
 		},
 		page = blink.currentPage;
 
@@ -30,7 +30,7 @@
 		},
 
 		init: function () {
-			var parent = blink.theme.styles.classic.prototype;
+			var parent = blink.theme.styles.basic.prototype;
 			parent.init.call(this);
 			this.addActivityTitle();
 			this.addPageNumber();
@@ -39,7 +39,7 @@
 		},
 
 		removeFinalSlide: function () {
-			var parent = blink.theme.styles.classic.prototype;
+			var parent = blink.theme.styles.basic.prototype;
 			parent.removeFinalSlide.call(this, true);
 		},
 
@@ -116,7 +116,7 @@
 		}
 	};
 
-	laurel_demo.prototype = _.extend({}, new blink.theme.styles.classic(), laurel_demo.prototype);
+	laurel_demo.prototype = _.extend({}, new blink.theme.styles.basic(), laurel_demo.prototype);
 
 	blink.theme.styles.laurel_demo = laurel_demo;
 
@@ -124,7 +124,7 @@
 
 $(document).ready(function () {
 	
-	$('body').addClass('content_type_curso_classic content_type_clase_classic ');
+	$('body').addClass('content_type_curso_basic content_type_clase_basic ');
 
     $('.item').find('.header').find('.title')
 		.filter(function () {
