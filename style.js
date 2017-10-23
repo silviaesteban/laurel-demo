@@ -1,16 +1,16 @@
 (function (blink) {
 	'use strict';
 
-	var laurel-demo = function () {
-			blink.theme.styles.classic.apply(this, arguments);
+	var laurel_demo = function () {
+			blink.theme.styles.laurel_demo.apply(this, arguments);
 		},
 		page = blink.currentPage;
 
-	laurel-demoStyle.prototype = {
-		bodyClassName: 'content_type_clase_laurel-demo',
+	laurel_demoStyle.prototype = {
+		bodyClassName: 'content_type_clase_laurel_demo',
 		extraPlugins: ['image2'],
 		ckEditorStyles: {
-			name: 'laurel-demo',
+			name: 'laurel_demo',
 			styles: [
 
 				{ name: 'Título 1', element: 'h4', attributes: { 'class': 'bck-title1'} },
@@ -30,7 +30,7 @@
 		},
 
 		init: function () {
-			var parent = blink.theme.styles.classic.prototype;
+			var parent = blink.theme.styles.laurel_demo.prototype;
 			parent.init.call(this);
 			this.addActivityTitle();
 			this.addPageNumber();
@@ -39,7 +39,7 @@
 		},
 
 		removeFinalSlide: function () {
-			var parent = blink.theme.styles.classic.prototype;
+			var parent = blink.theme.styles.laurel_demo.prototype;
 			parent.removeFinalSlide.call(this, true);
 		},
 
@@ -116,9 +116,9 @@
 		}
 	};
 
-	laurel-demoStyle.prototype = _.extend({}, new blink.theme.styles.classic(), laurel-demoStyle.prototype);
+	laurel_demoStyle.prototype = _.extend({}, new blink.theme.styles.laurel_demo(), laurel_demoStyle.prototype);
 
-	blink.theme.styles.laurel-demo = laurel-demoStyle;
+	blink.theme.styles.laurel_demo = laurel_demoStyle;
 
 })( blink );
 
@@ -145,9 +145,9 @@ $(document).ready(function () {
 	}
 
 	// BK-8433 cambiamos el logo de las slides por el del dominio
-	var src_logo = $('.content_type_clase_laurel-demo').find('.logo_slide').attr('logo_dominio');
+	var src_logo = $('.content_type_clase_laurel_demo').find('.logo_slide').attr('logo_dominio');
 	if (typeof(src_logo) != 'undefined' && src_logo && src_logo != '' && src_logo.indexOf('gif1x1.gif') == -1) {
-		$('.content_type_clase_laurel-demo').find('.logo-publisher').css('background-image', "url('"+src_logo+"')");
+		$('.content_type_clase_laurel_demo').find('.logo-publisher').css('background-image', "url('"+src_logo+"')");
 	}
 
 });
@@ -177,5 +177,5 @@ function poolReposition() {
 }
 
 $(document).ready(function () {
-$('body').addClass('content_type_curso_classic	content_type_clase_classic');
+$('body').addClass('content_type_curso_laurel_demo	content_type_clase_laurel_demo');
 });
